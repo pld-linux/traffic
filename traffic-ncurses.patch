@@ -1,0 +1,24 @@
+diff -urN traffic-current/configure.in traffic-current.new/configure.in
+--- traffic-current/configure.in	2003-05-02 01:14:11.000000000 +0200
++++ traffic-current.new/configure.in	2003-12-29 20:49:03.000000000 +0100
+@@ -15,7 +15,7 @@
+ AC_CHECK_HEADER(pcap.h,
+ 				[AC_DEFINE([HAVE_PCAP_H])],
+ 				[AC_MSG_ERROR([Required !])])
+-AC_CHECK_HEADER(ncurses.h,
++AC_CHECK_HEADER(ncurses/ncurses.h,
+ 				[AC_DEFINE([HAVE_PCAP_H])],
+ 				[AC_MSG_ERROR([Required !])])
+ AC_CHECK_HEADER(net/ethernet.h,
+diff -urN traffic-current/include/traffic.h traffic-current.new/include/traffic.h
+--- traffic-current/include/traffic.h	2003-12-14 00:38:46.000000000 +0100
++++ traffic-current.new/include/traffic.h	2003-12-29 20:53:52.000000000 +0100
+@@ -8,7 +8,7 @@
+ #include <sys/time.h>
+ #include <netinet/in_systm.h>
+ #include <pcap.h>
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <net/ethernet.h>
+ #include <netinet/in.h>
+ #include <netinet/ip.h>
