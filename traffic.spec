@@ -2,14 +2,13 @@ Summary:	Traffic Analyzer
 Summary(pl):	Analizator ruchu
 Name:		traffic
 Version:	0.1
-Release:	1
+Release:	1.rc4
 License:	Free
 Group:		Networking/Utilities
-Source0:	http://darkzone.ma.cx/resources/unix/traffic/%{name}-current.tar.gz
-# Source0-md5:	b427c393f2b0202d0188af07b4a1c02c
+Source0:	http://darkzone.ma.cx/resources/unix/traffic/%{name}-%{version}rc4.tar.gz
+# Source0-md5:	f8f1473639e24e8c9ff74eb457014b31
 URL:		http://darkzone.ma.cx/resources/unix/traffic/
 Patch0:		%{name}-ncurses.patch
-Patch1:		%{name}-gcc33.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libpcap-devel
@@ -23,9 +22,8 @@ Traffic Analyzer based on libpcap and ncurses.
 Analizator ruchu oparty na libpcap i ncurses.
 
 %prep
-%setup -q -n %{name}-current
+%setup -q -n %{name}-%{version}rc4
 %patch0 -p1
-%patch1 -p1
 
 %build
 rm -f missing
