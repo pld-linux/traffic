@@ -1,5 +1,5 @@
 Summary:	Traffic Analyzer
-Summary(pl):	Analizator ruchu
+Summary(pl.UTF-8):   Analizator ruchu
 Name:		traffic
 Version:	0.1
 %define		_rc	rc4
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Traffic Analyzer based on libpcap and ncurses.
 
-%description -l pl
+%description -l pl.UTF-8
 Analizator ruchu oparty na libpcap i ncurses.
 
 %prep
