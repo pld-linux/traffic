@@ -1,5 +1,5 @@
 Summary:	Traffic Analyzer
-Summary(pl.UTF-8):   Analizator ruchu
+Summary(pl.UTF-8):	Analizator ruchu
 Name:		traffic
 Version:	0.1
 %define		_rc	rc4
