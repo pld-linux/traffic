@@ -1,5 +1,5 @@
 %define		subver	rc4
-%define		rel		2
+%define		rel		3
 Summary:	Traffic Analyzer
 Summary(pl.UTF-8):	Analizator ruchu
 Name:		traffic
